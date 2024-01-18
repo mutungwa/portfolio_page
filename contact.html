@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Include Custom CSS -->
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Custom CSS -->
+  <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-   <div class="container mt-5">
-      <h1 class="text-center">Contact Info</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Contact Details</h5>
-              <ul>
-                <li><i class="fas fa-user"></i> <strong>Name:</strong> Kelvin Mutungwa</li>
-                <li><i class="fas fa-envelope"></i> <strong>Email:</strong> Mutungwakelvin@mail.com</li>
-                <li><i class="fas fa-phone"></i> <strong>Phone:</strong> (254) 48888306</li>
-                <!-- Update the LinkedIn link with Bootstrap classes -->
-                <li class="social-buttons">
-                  <a href="https://www.linkedin.com/in/kelvin-mutungwa" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary btn-sm">
-                    <i class="fab fa-linkedin"></i>Linkedin
-                  </a>
-                </li>
-              <li class="social-buttons">
-                <a href="https://github.com/mutungwa" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-primary btn-sm">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                </li>
-
-
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Address</h5>
-              <address>
-                <strong>Kelvin Mutungwa</strong><br>
-                <i class="fas fa-map-marker-alt"></i> Sultan Hamud<br>
-                <i class="fas fa-city"></i> Makueni, Sultan Hamud 300<br>
-              </address>
-            </div>
-          </div>
-        </div>
+  <section>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          Kelvin Mutungwa
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </nav>
+   </section>
+  <section id="contact" class="page-section">
+  <div class="col-lg-5">
+    <h2 class="mb-2 fw-bold">Hire Me.</h2>
+    <p class="text-black-50 mb-5 lead">I am available for freelance work. Connect with me via phone: <span
+        class="fw-bold">0748888306</span> or email: <span class="fw-bold">mutungwakelvin@gmail.com</span></p>
+    <div class="pb-5 pb-lg-1">
+      <form action="mail.php" method="post">
+          <div class="form-group pb-4">
+              <input type="text" class="form-control form-control-lg" name="name" placeholder="Your name">
+          </div>
+
+          <div class="form-group pb-4">
+              <input type="email" class="form-control form-control-lg" name="email" placeholder="Your email">
+          </div>
+
+          <div class="form-group pb-4">
+              <input type="text" class="form-control form-control-lg" name="subject" placeholder="Write a subject">
+          </div>
+
+          <div class="form-group pb-4">
+              <textarea class="form-control form-control-lg" name="message" placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-info btn-lg px-5 py-3 shadow-sm">Submit</button>
+      </form>
+    </div>
+  </div>
+  </section>
 </body>
+
 </html>

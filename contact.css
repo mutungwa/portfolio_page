@@ -1,35 +1,43 @@
-/* Custom CSS for Contact Page */
+/* Add your global styles here if needed */
 
-body {
-    background-color: #f8f9fa;
+/* Style for the Submit button */
+button[type="submit"] {
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.contact-container {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 30px;
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
-.contact-container h1 {
-    font-size: 24px;
+/* Style for the form input fields */
+.form-control {
+  border: 1px solid #007bff; /* Blue border for input fields */
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-.contact-details {
-    font-size: 18px;
+/* Style for the section background color */
+.contact {
+  background-color: #f4f4f4; /* Light grey background */
 }
 
-.contact-details a {
-    text-decoration: none;
-    color: #007bff;
+/* Style for section title */
+.section-title h2 {
+  color: #007bff; /* Blue color for section title */
 }
 
-.contact-details a:hover {
-    text-decoration: underline;
+/* Additional styling for form error and success messages if needed */
+.error-message {
+  color: #dc3545; /* Red color for error messages */
 }
 
-.contact-address {
-    font-style: italic;
-    color: #555;
+.sent-message {
+  color: #28a745; /* Green color for success messages */
 }
